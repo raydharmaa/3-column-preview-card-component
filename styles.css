@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+}
+
+/* Whole App Content */
+
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+}
+
+/* Card Component */
+
+.card-component {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    padding: 5px 150px;
+}
+
+@media screen and (max-width: 1024px) {
+    .card-component {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 35px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-component {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        padding: 0 35px;
+        margin: 35px 0;
+    }
+}
+
+/* Card Grid */
+
+/* Sedans */
+
+.card-grid-sedans {
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    padding: 50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-grid-sedans {
+        background-color: hsl(31, 77%, 52%);
+        color: #fff;
+        padding: 50px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0 !important;
+    }
+}
+
+.card-grid-sedans p {
+    margin-top: 35px;
+    line-height: 25px;
+}
+
+.card-grid-sedans h1 {
+    margin-top: 25px;
+}
+
+.card-grid-sedans button {
+    background-color: #fff;
+    color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(31, 77%, 52%);
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 105px;
+}
+
+.card-grid-sedans button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 350ms;
+}
+
+/* SUVs */
+
+.card-grid-suvs {
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    padding: 50px;
+}
+
+.card-grid-suvs button {
+    background-color: #fff;
+    color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(184, 100%, 22%);
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 105px;
+}
+
+.card-grid-suvs button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 350ms;
+}
+
+.card-grid-suvs p {
+    margin-top: 35px;
+    line-height: 25px;
+}
+
+.card-grid-suvs h1 {
+    margin-top: 25px;
+}
+
+/* Luxury */
+
+.card-grid-luxury {
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    padding: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-grid-luxury {
+        background-color: hsl(179, 100%, 13%);
+        color: #fff;
+        padding: 50px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 0 !important;
+    }
+}
+
+.card-grid-luxury button {
+    background-color: #fff;
+    color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(179, 100%, 13%);
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 105px;
+}
+
+.card-grid-luxury button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: 350ms;
+}
+
+
+.card-grid-luxury p {
+    margin-top: 35px;
+    line-height: 25px;
+}
+
+.card-grid-luxury h1 {
+    margin-top: 25px;
+}
+
+/* Footer - Attribution */
+
+.attribution {
+    margin: 35px 0;
+}
+
+.attribution p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .attribution p {
+        font-size: 0.85rem;
+    }
+}
+
+.attribution a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
